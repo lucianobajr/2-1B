@@ -36,7 +36,7 @@ public class EmployedUser extends User{
         if(Desease_history_score >= 1)
             System.out.println("Sua pontuação de risco é superior a 1 é recomendado que tome cuidados!");
         
-            System.out.println("---------------------------------");
+        System.out.println("---------------------------------");
 
     }  
 
