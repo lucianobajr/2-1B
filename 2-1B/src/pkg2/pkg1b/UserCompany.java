@@ -9,7 +9,8 @@ public class UserCompany {
     private String plan;
     private Address address; 
     private int numEmployees;
-    private boolean activePlan;
+    private boolean activePlan;  
+    SetEnviroment SE = new SetEnviroment(); 
     //private EmployeeList  employee_List; //adicionar a lista de empregados ou verificar conexao BD
     //private String departments;         // sera uma lista de ambientes especificos
     
@@ -46,9 +47,15 @@ public class UserCompany {
     //public String getDepartments() {        return departments;    }
 
     //public void setDepartments(String departments) {        this.departments = departments;    }
+    public void init_enviroment(){  
+        SE.read_enviroments();  
+        // at this moment the enviroment file fill  is a external task, out of the programm scope
+        SE.ShowSetEnviroments();
+    }  
     
+    void read_employers(){ 
 
-    
+    }
     
     
     

@@ -1,0 +1,5 @@
+Refeitorio 20  
+Auditorio 100
+Escritorio 50
+Saguao 32
+Estacionamento 45  

@@ -1,14 +1,16 @@
 package pkg2.pkg1b;
 import pkg2.pkg1b.User.Sex;
+
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 /** 
  * @author Cláudio,Guilherme e Luciano
  */
 public class Main {
-    public static void main(String[] args) { 
+    public static void main(String[] args) throws FileNotFoundException { 
         String name, Ssex;   
         int age;  
-        Sex sex;  
+        Sex sex;   
         
         Scanner getK = new Scanner(System.in);
         System.out.println("Digite 1- Nomral User / 2- Employed User"); 
@@ -17,6 +19,7 @@ public class Main {
             System.out.println("O usuário "+luciano.getName()+" tem "+luciano.getAge()+" anos"); 
         }
         else if(getK.nextInt() == 2){  
+            // error 
             System.out.println("Nome: "); 
             name = getK.nextLine(); 
             System.out.println("Idade:"); 
@@ -28,10 +31,14 @@ public class Main {
             else  
                 sex = Sex.Female; 
 
-            EmployedUser EUser = new EmployedUser(name, age, sex); 
+            EmployedUser EUser = new EmployedUser(name, age, sex);  
             EUser.init_employe_verification(); 
             EUser.show_user(); 
-        } 
+        }  
+
+
+
+         
 
        
     }

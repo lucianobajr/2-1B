@@ -1,5 +1,7 @@
 package pkg2.pkg1b; 
-import java.util.Scanner; 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;  
 public class EmployedUser extends User{ 
     private int Desease_history_score;   
      
@@ -38,6 +40,20 @@ public class EmployedUser extends User{
         
         System.out.println("---------------------------------");
 
+    } 
+    public void write_user_in_file()throws IOException{ 
+        FileWriter myWriter = new FileWriter("/2-1B/2-1B/src/pkg2/pkg1b/employed_data.txt");
+        try{  
+            myWriter.write(toStringEmployed()); 
+            myWriter.close();
+        } 
+        catch(IOException e){ 
+            System.err.println("Erro no arquivo"); 
+            e.printStackTrace();
+        }
+    }  
+    private String toStringEmployed(){ 
+        return getName()+" "+getAge()+" "+getSex()+" "+this.Desease_history_score; 
     }  
 
   

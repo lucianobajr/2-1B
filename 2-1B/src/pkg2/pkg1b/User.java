@@ -10,7 +10,7 @@ public class User {
     private String name;
     private int age;
     private Sex sex;    
-    
+    private int UserFlag; // to each user kind     
     public String getName(){
         return this.name;
     }
@@ -33,7 +33,8 @@ public class User {
     
     public void setSex(Sex sex){
       this.sex = sex;  
-    }
+    } 
+    
     
     public User(String name,int age,Sex sex){
         this.name = name;
