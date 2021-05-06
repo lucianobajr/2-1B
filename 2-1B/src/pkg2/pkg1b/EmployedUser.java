@@ -27,6 +27,11 @@ public class EmployedUser extends User{
         System.out.println("Qualquer doença pulmonar"); 
         if(getK.nextInt()==1) { 
             this.Desease_history_score +=1 ; 
+        } 
+        try {
+            write_user_in_file();
+        } catch (IOException e) {
+            e.printStackTrace();
         }  
     }
     public void show_user(){ 
@@ -41,8 +46,8 @@ public class EmployedUser extends User{
         System.out.println("---------------------------------");
 
     } 
-    public void write_user_in_file()throws IOException{ 
-        FileWriter myWriter = new FileWriter("/2-1B/2-1B/src/pkg2/pkg1b/employed_data.txt");
+    public void write_user_in_file() throws IOException{ 
+        FileWriter myWriter = new FileWriter("/Users/Macbook/Documents/2-1B/2-1B/src/pkg2/pkg1b/employed_data.txt", true);
         try{  
             myWriter.write(toStringEmployed()); 
             myWriter.close();
@@ -52,8 +57,9 @@ public class EmployedUser extends User{
             e.printStackTrace();
         }
     }  
-    private String toStringEmployed(){ 
-        return getName()+" "+getAge()+" "+getSex()+" "+this.Desease_history_score; 
+    private String toStringEmployed(){  
+        // se der problema de linha a mais tirar o /n
+        return getName()+" "+getAge()+" "+getSex()+" "+this.Desease_history_score +"\n"; 
     }  
 
   

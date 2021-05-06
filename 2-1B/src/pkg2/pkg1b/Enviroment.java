@@ -10,7 +10,7 @@ public class Enviroment{
     public void init_projection(){   
         
         Scanner get = new Scanner(System.in); 
-        System.out.println("Quantas pessoas há no local, não é necessário o valor exato."); 
+        System.out.println("Quantas pessoas estao no local, não é necessário o valor exato."); 
         NumberPeopleProjection = get.nextInt();  
     } 
 
