@@ -1,7 +1,8 @@
-package pkg2.pkg1b; 
+package model.User;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Scanner;  
+import java.util.Scanner;
+
 public class EmployedUser extends User{ 
     private int Desease_history_score;   
      

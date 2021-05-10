@@ -1,6 +1,9 @@
-package entidades;
+package model.User;
 
-import entidades.Address;
+import java.io.FileNotFoundException;
+
+import model.Enviroment.Address;
+import model.Enviroment.SetEnviroment;
 
 public class UserCompany {
     
@@ -48,7 +51,12 @@ public class UserCompany {
 
     //public void setDepartments(String departments) {        this.departments = departments;    }
     public void init_enviroment(){  
-        SE.read_enviroments();  
+        try {
+            SE.read_enviroments();
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }  
         // at this moment the enviroment file fill  is a external task, out of the programm scope
         SE.ShowSetEnviroments();
     }  

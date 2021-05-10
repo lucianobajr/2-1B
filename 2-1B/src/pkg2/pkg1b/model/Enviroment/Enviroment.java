@@ -1,4 +1,4 @@
-package pkg2.pkg1b;  
+package model.Enviroment;
 import java.util.Scanner;
 public class Enviroment{  
     private int NumberPeopleProjection;  

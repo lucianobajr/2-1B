@@ -1,4 +1,4 @@
-package pkg2.pkg1b;
+package model.Enviroment;
 
 public class BusinessEnvironment extends Enviroment{
     private String Name;  
