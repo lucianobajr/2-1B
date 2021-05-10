@@ -17,9 +17,9 @@ public class BasicController {
         answer = getK.nextInt();
     
         if(answer==1 ){
-            NormalUser luciano = new NormalUser("Luciano",21,Sex.Male);
-            System.out.println("O usuário "+luciano.getName()+" tem "+luciano.getAge()+" anos");
-    
+            NormalUserController NC = new NormalUserController();  
+            NC.init_new_user();
+
         }
     
         if(answer==2){
