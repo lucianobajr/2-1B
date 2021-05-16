@@ -40,5 +40,15 @@ public class User {
         this.name = name;
         this.age = age;
         this.sex = sex;
+    } 
+    public String show_sex(){ 
+        String Ssex; 
+        if(this.sex == sex.Male){ 
+           Ssex = "Masculino"; 
+        } 
+        else{ 
+            Ssex = "Feminino"; 
+        } 
+        return Ssex; 
     }
 }

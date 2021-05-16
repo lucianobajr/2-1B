@@ -6,7 +6,8 @@ import java.util.Scanner;
 import pkg2.pkg1b.model.Enviroment.Enviroment;
 import pkg2.pkg1b.model.Mask;
 
-public class NormalUser extends User {
+public class NormalUser extends User { 
+    private int TypeUser; // 1 normal user - 2 emplyed user -> so vai mudar o ambiente 
     private int Desease_history_score; 
     // define a mascara que o usuario está usando 
     Mask TypeMask = new Mask();   
@@ -84,6 +85,16 @@ public class NormalUser extends User {
         }
         
         
+    } 
+    
+    private void enviroment_verification(){  
+        String nameEnvi; 
+        System.out.println("Entre com o ambiente:"); 
+        nameEnvi = getK.nextLine();    
+        this.UserEnv.setName(nameEnvi);  
+        this.UserEnv.setRisk();
+       
+        
     }
      
    
@@ -91,12 +102,15 @@ public class NormalUser extends User {
         System.out.println("---------------------------------");
         System.out.println("Dados do usuario:"); 
         System.out.println("Nome: "+ getName()); 
-        System.out.println("Idade: "+ getAge()); 
+        System.out.println("Idade: "+ getAge());  
+        System.out.println("Sexo: " + this.show_sex() );
         System.out.println("Pontuação em grupo de risco: " + this.Desease_history_score);  
         if(Desease_history_score >= 1)
             System.out.println("Sua pontuação de risco é superior a 1 é recomendado que tome cuidados!");
         System.out.println("Mask: "+ this.TypeMask.getDescrição()); 
-        System.out.println("Mask protection: "+ this.TypeMask.getGrauDeProtecao());
+        System.out.println("Mask protection: "+ this.TypeMask.getGrauDeProtecao()); 
+        System.out.println("Local: "+ this.UserEnv.getName()); 
+        System.out.println("Local Risco: "+ this.UserEnv.getRisk());
         System.out.println("---------------------------------");
 
     } 

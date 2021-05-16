@@ -4,7 +4,8 @@ public class Enviroment{
     private int NumberPeopleProjection;  
     private String Name;  
     private int id;  
-    private int risk;  
+    private int risk;   
+    public CommonEnvironments AllEnv =  new CommonEnvironments();  
        
     private enum enviromentType{ 
         Closed, Opened
@@ -30,8 +31,8 @@ public class Enviroment{
         return risk;
     }
 
-    public void setRisk(int risk) {
-        this.risk = risk;
+    public void setRisk() { 
+        this.risk = this.AllEnv.getRisk(this.Name);
     }
 
     public int getId() {
@@ -46,8 +47,15 @@ public class Enviroment{
         return Name;
     }
 
-    public void setName(String name) {
-        this.Name = name;
+    public boolean setName(String name) {
+        if(this.AllEnv.verify(name) == true){
+            this.Name = name; 
+            return true; 
+        }
+        else
+            return false; 
+            
+            
     } 
 
 
