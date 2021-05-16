@@ -1,9 +1,9 @@
-package model.User;
+package pkg2.pkg1b.model.User;
 
 import java.io.FileNotFoundException;
 
-import model.Enviroment.Address;
-import model.Enviroment.SetEnviroment;
+import pkg2.pkg1b.model.Enviroment.Address;
+import pkg2.pkg1b.model.Enviroment.SetEnviroment;
 
 public class UserCompany {
     

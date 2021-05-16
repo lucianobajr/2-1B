@@ -1,6 +1,6 @@
 package controller;
 
-import model.User.NormalUser;
+import pkg2.pkg1b.model.User.NormalUser;
 import model.User.User.Sex;
 
 import java.util.Scanner;  

@@ -1,8 +1,11 @@
-package model.User;
+package pkg2.pkg1b.model.User;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
+import model.Mask;
+import model.User.User;
+import pkg2.pkg1b.model.Enviroment.Enviroment;
 
 public class NormalUser extends User {
     private int Desease_history_score; 
@@ -11,7 +14,11 @@ public class NormalUser extends User {
     } 
 
 public class EmployedUser extends User{ 
-    private int Desease_history_score;   
+    private int Desease_history_score;  
+    // define a mascara que o usuario está usando 
+    Mask TypeMask = new Mask();   
+    // define o ambiente  que o usuario esta
+    Enviroment UserEnv = new Enviroment(); 
      
 
     public EmployedUser(String name, int age, Sex sex){   
@@ -38,7 +45,8 @@ public class EmployedUser extends User{
             } 
             
         }  
-    }
+    } 
+   
     public void show_user(){ 
         System.out.println("---------------------------------");
         System.out.println("Dados do usuario:"); 
@@ -57,6 +65,4 @@ public class EmployedUser extends User{
     }  
 
   
-}
-    
 }

@@ -3,7 +3,7 @@ package controller;
 import java.util.Scanner;
 
 import model.User.EmployedUser;
-import model.User.NormalUser;
+import pkg2.pkg1b.model.User.NormalUser;
 import model.User.User.Sex;
 public class BasicController {
     public void init_controller(){  
