@@ -3,7 +3,6 @@ package pkg2.pkg1b.model.User;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
-import model.User.User;
 import pkg2.pkg1b.model.Enviroment.Enviroment;
 import pkg2.pkg1b.model.Mask;
 
@@ -91,7 +90,8 @@ public class NormalUser extends User {
         System.out.println("Pontuação em grupo de risco: " + this.Desease_history_score);  
         if(Desease_history_score >= 1)
             System.out.println("Sua pontuação de risco é superior a 1 é recomendado que tome cuidados!");
-        
+        System.out.println("Mask: "+ this.TypeMask.getDescrição()); 
+        System.out.println("Mask protection: "+ this.TypeMask.getGrauDeProtecao());
         System.out.println("---------------------------------");
 
     } 

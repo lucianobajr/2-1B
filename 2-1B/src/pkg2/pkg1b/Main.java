@@ -1,4 +1,6 @@
-import controller.BasicController;
+package pkg2.pkg1b;
+
+import pkg2.pkg1b.controller.BasicController;
 /** 
  * @author Cláudio,Guilherme e Luciano
  */

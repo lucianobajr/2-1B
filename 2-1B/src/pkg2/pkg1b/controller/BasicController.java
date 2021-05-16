@@ -1,10 +1,10 @@
-package controller;  
+package pkg2.pkg1b.controller;  
 
 import java.util.Scanner;
 
-import model.User.EmployedUser;
-import pkg2.pkg1b.model.User.NormalUser;
-import model.User.User.Sex;
+import pkg2.pkg1b.model.User.EmployedUser;
+import pkg2.pkg1b.model.User.User.Sex; 
+
 public class BasicController {
     public void init_controller(){  
         String name, Ssex;

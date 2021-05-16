@@ -1,9 +1,8 @@
-package controller;
+package pkg2.pkg1b.controller;
 
 import pkg2.pkg1b.model.User.NormalUser;
-import model.User.User.Sex;
-
 import java.util.Scanner;  
+import pkg2.pkg1b.model.User.User.Sex;
 
 public class NormalUserController {
     public void init_new_user(){  
@@ -34,8 +33,8 @@ public class NormalUserController {
         
         NormalUser newUser = new NormalUser(Name,Age,SS); 
         
-        newUser.init_NormalUser_verification(); 
-        System.out.println("O usuário "+newUser.getName()+" tem "+newUser.getAge()+" anos");
-
+        newUser.init_NormalUser_verification();  
+        
+        newUser.show_user(); 
     }
 }

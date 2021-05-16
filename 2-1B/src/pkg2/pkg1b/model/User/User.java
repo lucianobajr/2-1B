@@ -1,4 +1,4 @@
-package model.User;
+package pkg2.pkg1b.model.User;
 
 
 

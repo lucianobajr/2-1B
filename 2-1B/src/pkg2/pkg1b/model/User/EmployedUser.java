@@ -1,4 +1,4 @@
-package model.User;
+package pkg2.pkg1b.model.User;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
