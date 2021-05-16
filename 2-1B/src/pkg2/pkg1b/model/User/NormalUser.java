@@ -11,35 +11,40 @@ public class NormalUser extends User {
     // define a mascara que o usuario está usando 
     Mask TypeMask = new Mask();   
     // define o ambiente  que o usuario esta
-    Enviroment UserEnv = new Enviroment(); 
+    Enviroment UserEnv = new Enviroment();  
+    Scanner getK = new Scanner(System.in); 
      
     public NormalUser(String name, int age,Sex sex) {
         super(name, age,sex);
     } 
      
-    public void init_NormalUser_verification(){  
-        Scanner getK = new Scanner(System.in); 
+    public void init_NormalUser_verification(){ 
         //System.out.println("Digite 1 para sim ou 2 para não para cada uma das doenças abaixo"); 
+            
+            desease_verification();     
+            Mask_verification();
+            
+    } 
+    private void desease_verification(){  
         System.out.println("Diabetes"); 
         if(getK.nextInt()==1) { 
             this.Desease_history_score +=1 ; 
-        } 
+         } 
         System.out.println("Hipertensao"); 
-            if(getK.nextInt()==1) { 
-                this.Desease_history_score +=1 ; 
-            }
-            System.out.println("Qualquer doença cardiaca"); 
-            if(getK.nextInt()==1) { 
-                this.Desease_history_score +=1 ; 
-            }  
-            System.out.println("Qualquer doença pulmonar"); 
-            if(getK.nextInt()==1) { 
-                this.Desease_history_score +=1 ; 
-            }  
-            Mask_verification();
-            
-      } 
-    private int Mask_verification(){ 
+        if(getK.nextInt()==1) { 
+            this.Desease_history_score +=1 ; 
+        }
+        System.out.println("Qualquer doença cardiaca"); 
+        if(getK.nextInt()==1) { 
+            this.Desease_history_score +=1 ; 
+        }  
+        System.out.println("Qualquer doença pulmonar"); 
+        if(getK.nextInt()==1) { 
+            this.Desease_history_score +=1 ; 
+        }   
+    } 
+    
+    private void  Mask_verification(){ 
         // return mask Score  
         int id = 1 ; // vai vir do butão da parte grafica   
         System.out.println("Tipos de mascaras:"); 
@@ -78,7 +83,7 @@ public class NormalUser extends User {
             System.out.println("Mascara nao existe");
         }
         
-        return 0; 
+        
     }
      
    
