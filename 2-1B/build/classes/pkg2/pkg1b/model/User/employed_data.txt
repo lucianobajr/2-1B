@@ -1,0 +1,3 @@
+ana 30 Female 1
+guilherme 1 Male 0
+marcus 62 Male 4

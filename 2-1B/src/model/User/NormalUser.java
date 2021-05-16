@@ -1,7 +1,14 @@
 package model.User;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
+
+public class NormalUser extends User {
+    private int Desease_history_score; 
+    public NormalUser(String name, int age,Sex sex) {
+        super(name, age,sex);
+    } 
 
 public class EmployedUser extends User{ 
     private int Desease_history_score;   
@@ -10,9 +17,9 @@ public class EmployedUser extends User{
     public EmployedUser(String name, int age, Sex sex){   
         super(name,age,sex); 
     }   
-    public void init_employe_verification(){  
+    public void init_NormalUser_verification(){  
         Scanner getK = new Scanner(System.in); 
-        System.out.println("Digite 1 para sim ou 2 para não para cada uma das doenças abaixo"); 
+        //System.out.println("Digite 1 para sim ou 2 para não para cada uma das doenças abaixo"); 
         System.out.println("Diabetes"); 
         if(getK.nextInt()==1) { 
             this.Desease_history_score +=1 ; 
@@ -29,10 +36,7 @@ public class EmployedUser extends User{
             if(getK.nextInt()==1) { 
                 this.Desease_history_score +=1 ; 
             } 
-            try {
-                write_user_in_file();
-            } catch (IOException e) {
-            e.printStackTrace();
+            
         }  
     }
     public void show_user(){ 
@@ -47,21 +51,12 @@ public class EmployedUser extends User{
         System.out.println("---------------------------------");
 
     } 
-    public void write_user_in_file() throws IOException{ 
-        FileWriter myWriter = new FileWriter("/Users/Macbook/Documents/2-1B/2-1B/src/pkg2/pkg1b/employed_data.txt", true);
-        try{  
-            myWriter.write(toStringEmployed()); 
-            myWriter.close();
-        } 
-        catch(IOException e){ 
-            System.err.println("Erro no arquivo"); 
-            e.printStackTrace();
-        }
-    }  
     private String toStringEmployed(){  
         // se der problema de linha a mais tirar o /n
         return getName()+" "+getAge()+" "+getSex()+" "+this.Desease_history_score +"\n"; 
     }  
 
   
+}
+    
 }
