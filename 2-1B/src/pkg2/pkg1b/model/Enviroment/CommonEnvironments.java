@@ -21,7 +21,7 @@ public class CommonEnvironments {
                return risk; 
         }
         return 0; 
-    }
-
+    } 
+   
 } 
 

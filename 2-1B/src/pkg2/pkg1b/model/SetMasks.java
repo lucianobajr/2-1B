@@ -14,13 +14,14 @@ import java.util.ArrayList;
 public class SetMasks {
      private String[] AvaiableMasks = {"Sem Mascara", "Mascara Tecido", "Mascara cirurgica", "Mascara N95", "Mascara PFF2"};
 
-      public int getRisk(String name){ 
-        int risk = 0 ; 
+      public int getRisk(String name){  
+          // ao contrario 
+        int risk = 4 ; 
         for(String i: AvaiableMasks){ 
-            if(risk> 3) risk = 4;
+            if(risk< 2) risk = 1;
             if(i.equals(name)) 
                return risk; 
-            risk++;
+            risk--;
         }
         return 0; 
     }
