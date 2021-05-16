@@ -3,9 +3,9 @@ package pkg2.pkg1b.model.User;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
-import model.Mask;
 import model.User.User;
 import pkg2.pkg1b.model.Enviroment.Enviroment;
+import pkg2.pkg1b.model.Mask;
 
 public class NormalUser extends User {
     private int Desease_history_score; 
@@ -36,9 +36,51 @@ public class NormalUser extends User {
             System.out.println("Qualquer doença pulmonar"); 
             if(getK.nextInt()==1) { 
                 this.Desease_history_score +=1 ; 
-            } 
+            }  
+            Mask_verification();
             
+      } 
+    private int Mask_verification(){ 
+        // return mask Score  
+        int id = 1 ; // vai vir do butão da parte grafica   
+        System.out.println("Tipos de mascaras:"); 
+        
+        if(id == 1){ 
+            TypeMask.setId(id);
+            TypeMask.setDescrição("Mascara cirurgica"); 
+            TypeMask.setGrauDeProtecao(3);
+        } 
+        else if(id == 2 ){   
+            
+            TypeMask.setId(id);
+            TypeMask.setDescrição("Mascara N95"); 
+            TypeMask.setGrauDeProtecao(4);
+        } 
+        else if(id == 3){ 
+           
+            TypeMask.setId(id);
+            TypeMask.setDescrição("Mascara PFF2"); 
+            TypeMask.setGrauDeProtecao(4);
+        } 
+        else if(id == 4){   
+            
+            TypeMask.setId(id);
+            TypeMask.setDescrição("Mascara Tecido"); 
+            TypeMask.setGrauDeProtecao(2);
+        
         }  
+        else if(id == 5){  
+            
+            TypeMask.setId(id);
+            TypeMask.setDescrição("NoMask"); 
+            TypeMask.setGrauDeProtecao(0);
+        }
+        else{ 
+            System.out.println("Mascara nao existe");
+        }
+        
+        return 0; 
+    }
      
    
     public void show_user(){ 

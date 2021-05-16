@@ -1,24 +1,14 @@
-package model;
+package pkg2.pkg1b.model;
 
 public class Mask {
     
     int id;
     String descrição;
-    Double grauDeProtecao;  
+    int grauDeProtecao;  
 
     
     
         //CONTRUTOR
-    
-    public Mask() {    }
-
-    public Mask(int id, String descrição, Double grauDeProtecao) {
-        this.id = id;
-        this.descrição = descrição;
-        this.grauDeProtecao = grauDeProtecao;
-    }
-    
-   
     
 
     //GET AND SET
@@ -31,9 +21,9 @@ public class Mask {
 
     public void setDescrição(String descrição) {        this.descrição = descrição;    }
 
-    public Double getGrauDeProtecao() {        return grauDeProtecao;    }
+    public int getGrauDeProtecao() {        return grauDeProtecao;    }
 
-    public void setGrauDeProtecao(Double grauDeProtecao) {        this.grauDeProtecao = grauDeProtecao;    }
+    public void setGrauDeProtecao(int grauDeProtecao) {        this.grauDeProtecao = grauDeProtecao;    }
 
     @Override
     public String toString() {
