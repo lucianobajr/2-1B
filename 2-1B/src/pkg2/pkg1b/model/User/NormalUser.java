@@ -8,7 +8,8 @@ import pkg2.pkg1b.model.Mask;
 
 public class NormalUser extends User { 
     private int TypeUser; // 1 normal user - 2 emplyed user -> so vai mudar o ambiente 
-    private int Desease_history_score; 
+    private int Desease_history_score;  
+    private int TempoPermanenciaLocal; 
     // define a mascara que o usuario está usando 
     Mask TypeMask = new Mask();   
     // define o ambiente  que o usuario esta
