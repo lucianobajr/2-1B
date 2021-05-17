@@ -46,26 +46,28 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <Component id="ImagemPrincipal" min="-2" pref="651" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="ImagemPrincipal" min="-2" pref="661" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="Sexo" max="32767" attributes="0"/>
-                  <Component id="Saude" alignment="1" max="32767" attributes="0"/>
-                  <Component id="Tempo" alignment="1" max="32767" attributes="0"/>
-                  <Component id="Locais" alignment="1" max="32767" attributes="0"/>
-                  <Component id="Mascara" alignment="0" max="32767" attributes="0"/>
-                  <Component id="Idade" alignment="1" max="32767" attributes="0"/>
-                  <Component id="Nome" max="32767" attributes="0"/>
                   <Group type="102" alignment="1" attributes="0">
                       <Component id="jButton1" min="-2" pref="170" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                       <Component id="jButton2" min="-2" pref="170" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="SubmitButton" min="-2" pref="250" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                      <Component id="SubmitButton" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="Tempo" alignment="0" max="32767" attributes="0"/>
+                      <Component id="Saude" alignment="0" max="32767" attributes="0"/>
+                      <Component id="Locais" alignment="0" max="32767" attributes="0"/>
+                      <Component id="Mascara" alignment="0" max="32767" attributes="0"/>
+                      <Component id="Sexo" alignment="0" max="32767" attributes="0"/>
+                      <Component id="Idade" alignment="0" max="32767" attributes="0"/>
+                      <Component id="Nome" alignment="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -79,13 +81,13 @@
               <Component id="Idade" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="Sexo" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
               <Component id="Mascara" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
               <Component id="Locais" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="Saude" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
               <Component id="Tempo" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -93,7 +95,7 @@
                   <Component id="jButton1" max="32767" attributes="0"/>
                   <Component id="jButton2" min="-2" pref="46" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -102,7 +104,14 @@
     <Container class="javax.swing.JPanel" name="Nome">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="d3" green="d3" red="d3" type="rgb"/>
+          <Color blue="db" green="db" red="db" type="rgb"/>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="b3" green="b3" red="b3" type="rgb"/>
+            </LineBorder>
+          </Border>
         </Property>
       </Properties>
 
@@ -113,9 +122,9 @@
                   <Component id="jLabel2" min="-2" pref="79" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
                   <Component id="FieldName" min="-2" pref="421" max="-2" attributes="0"/>
-                  <EmptySpace pref="30" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -165,7 +174,14 @@
     <Container class="javax.swing.JPanel" name="Idade">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="d3" green="d3" red="d3" type="rgb"/>
+          <Color blue="db" green="db" red="db" type="rgb"/>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="b3" green="b3" red="b3" type="rgb"/>
+            </LineBorder>
+          </Border>
         </Property>
       </Properties>
 
@@ -225,7 +241,14 @@
     <Container class="javax.swing.JPanel" name="Sexo">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="d3" green="d3" red="d3" type="rgb"/>
+          <Color blue="db" green="db" red="db" type="rgb"/>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="b3" green="b3" red="b3" type="rgb"/>
+            </LineBorder>
+          </Border>
         </Property>
       </Properties>
 
@@ -248,7 +271,7 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="31" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="masculino" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -256,7 +279,7 @@
                   </Group>
                   <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
               </Group>
-              <Component id="jLabel6" alignment="0" pref="77" max="32767" attributes="0"/>
+              <Component id="jLabel6" alignment="0" pref="71" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>
@@ -310,7 +333,14 @@
     <Container class="javax.swing.JPanel" name="Mascara">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="d3" green="d3" red="d3" type="rgb"/>
+          <Color blue="db" green="db" red="db" type="rgb"/>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="b3" green="b3" red="b3" type="rgb"/>
+            </LineBorder>
+          </Border>
         </Property>
       </Properties>
 
@@ -321,8 +351,8 @@
                   <Component id="jLabel10" min="-2" pref="79" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                   <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="FieldMascara" min="-2" pref="426" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="FieldMascara" min="-2" pref="415" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -382,7 +412,14 @@
     <Container class="javax.swing.JPanel" name="Tempo">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="d3" green="d3" red="d3" type="rgb"/>
+          <Color blue="db" green="db" red="db" type="rgb"/>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="b3" green="b3" red="b3" type="rgb"/>
+            </LineBorder>
+          </Border>
         </Property>
       </Properties>
 
@@ -393,7 +430,7 @@
                   <Component id="jLabel8" min="-2" pref="79" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                   <Component id="FieldTempo" min="-2" pref="346" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -442,7 +479,14 @@
     <Container class="javax.swing.JPanel" name="Locais">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="d3" green="d3" red="d3" type="rgb"/>
+          <Color blue="db" green="db" red="db" type="rgb"/>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="b3" green="b3" red="b3" type="rgb"/>
+            </LineBorder>
+          </Border>
         </Property>
       </Properties>
 
@@ -453,8 +497,8 @@
                   <Component id="jLabel12" min="-2" pref="79" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                  <Component id="FieldLocal" min="-2" pref="422" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                  <Component id="FieldLocal" min="-2" pref="413" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -524,7 +568,14 @@
     <Container class="javax.swing.JPanel" name="Saude">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="d3" green="d3" red="d3" type="rgb"/>
+          <Color blue="db" green="db" red="db" type="rgb"/>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="b3" green="b3" red="b3" type="rgb"/>
+            </LineBorder>
+          </Border>
         </Property>
       </Properties>
 
@@ -550,7 +601,7 @@
                       <Component id="puerperas" min="-2" max="-2" attributes="0"/>
                       <Component id="asma" min="-2" pref="92" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -674,10 +725,14 @@
     </Component>
     <Component class="javax.swing.JLabel" name="ImagemPrincipal">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f4" green="f4" red="f4" type="rgb"/>
+        </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/pkg2/pkg1b/assets/register.png"/>
         </Property>
+        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton1">

@@ -91,7 +91,8 @@ public class MainView extends javax.swing.JFrame implements ActionListener{
         setBackground(new java.awt.Color(238, 238, 238));
         setResizable(false);
 
-        Nome.setBackground(new java.awt.Color(211, 211, 211));
+        Nome.setBackground(new java.awt.Color(219, 219, 219));
+        Nome.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(179, 179, 179)));
 
         jLabel1.setFont(new java.awt.Font("URW Gothic", 1, 18)); // NOI18N
         jLabel1.setText("Nome:");
@@ -114,9 +115,9 @@ public class MainView extends javax.swing.JFrame implements ActionListener{
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel1)
-                .addGap(43, 43, 43)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(FieldName, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap())
         );
         NomeLayout.setVerticalGroup(
             NomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -129,7 +130,8 @@ public class MainView extends javax.swing.JFrame implements ActionListener{
                 .addContainerGap())
         );
 
-        Idade.setBackground(new java.awt.Color(211, 211, 211));
+        Idade.setBackground(new java.awt.Color(219, 219, 219));
+        Idade.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(179, 179, 179)));
 
         jLabel3.setFont(new java.awt.Font("URW Gothic", 1, 18)); // NOI18N
         jLabel3.setText("Idade:");
@@ -162,7 +164,8 @@ public class MainView extends javax.swing.JFrame implements ActionListener{
                 .addGap(16, 16, 16))
         );
 
-        Sexo.setBackground(new java.awt.Color(211, 211, 211));
+        Sexo.setBackground(new java.awt.Color(219, 219, 219));
+        Sexo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(179, 179, 179)));
 
         jLabel5.setFont(new java.awt.Font("URW Gothic", 1, 18)); // NOI18N
         jLabel5.setText("Sexo:");
@@ -206,16 +209,17 @@ public class MainView extends javax.swing.JFrame implements ActionListener{
         SexoLayout.setVerticalGroup(
             SexoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SexoLayout.createSequentialGroup()
-                .addContainerGap(31, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(SexoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(masculino)
                     .addComponent(feminino))
                 .addGap(21, 21, 21))
-            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 77, Short.MAX_VALUE)
+            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 71, Short.MAX_VALUE)
         );
 
-        Mascara.setBackground(new java.awt.Color(211, 211, 211));
+        Mascara.setBackground(new java.awt.Color(219, 219, 219));
+        Mascara.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(179, 179, 179)));
 
         jLabel9.setFont(new java.awt.Font("URW Gothic", 1, 18)); // NOI18N
         jLabel9.setText("Máscara:");
@@ -238,8 +242,8 @@ public class MainView extends javax.swing.JFrame implements ActionListener{
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
                 .addComponent(jLabel9)
-                .addGap(18, 18, 18)
-                .addComponent(FieldMascara, javax.swing.GroupLayout.PREFERRED_SIZE, 426, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(FieldMascara, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         MascaraLayout.setVerticalGroup(
@@ -253,7 +257,8 @@ public class MainView extends javax.swing.JFrame implements ActionListener{
                 .addGap(21, 21, 21))
         );
 
-        Tempo.setBackground(new java.awt.Color(211, 211, 211));
+        Tempo.setBackground(new java.awt.Color(219, 219, 219));
+        Tempo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(179, 179, 179)));
 
         jLabel7.setFont(new java.awt.Font("URW Gothic", 1, 14)); // NOI18N
         jLabel7.setText("Tempo de permanência:");
@@ -271,7 +276,7 @@ public class MainView extends javax.swing.JFrame implements ActionListener{
                 .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel7)
-                .addGap(18, 18, 18)
+                .addGap(2, 2, 2)
                 .addComponent(FieldTempo, javax.swing.GroupLayout.PREFERRED_SIZE, 346, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -286,7 +291,8 @@ public class MainView extends javax.swing.JFrame implements ActionListener{
                 .addGap(28, 28, 28))
         );
 
-        Locais.setBackground(new java.awt.Color(211, 211, 211));
+        Locais.setBackground(new java.awt.Color(219, 219, 219));
+        Locais.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(179, 179, 179)));
 
         jLabel11.setFont(new java.awt.Font("URW Gothic", 1, 18)); // NOI18N
         jLabel11.setText("Locais:");
@@ -309,8 +315,8 @@ public class MainView extends javax.swing.JFrame implements ActionListener{
                 .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel11)
-                .addGap(35, 35, 35)
-                .addComponent(FieldLocal, javax.swing.GroupLayout.PREFERRED_SIZE, 422, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27)
+                .addComponent(FieldLocal, javax.swing.GroupLayout.PREFERRED_SIZE, 413, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         LocaisLayout.setVerticalGroup(
@@ -324,7 +330,8 @@ public class MainView extends javax.swing.JFrame implements ActionListener{
                 .addGap(21, 21, 21))
         );
 
-        Saude.setBackground(new java.awt.Color(211, 211, 211));
+        Saude.setBackground(new java.awt.Color(219, 219, 219));
+        Saude.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(179, 179, 179)));
 
         jLabel13.setFont(new java.awt.Font("URW Gothic", 1, 14)); // NOI18N
         jLabel13.setText("Condição de Saúde:");
@@ -395,7 +402,7 @@ public class MainView extends javax.swing.JFrame implements ActionListener{
                 .addGroup(SaudeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(puerperas)
                     .addComponent(asma, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(23, 23, 23))
+                .addGap(21, 21, 21))
         );
         SaudeLayout.setVerticalGroup(
             SaudeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -424,8 +431,10 @@ public class MainView extends javax.swing.JFrame implements ActionListener{
             }
         });
 
+        ImagemPrincipal.setBackground(new java.awt.Color(244, 244, 244));
         ImagemPrincipal.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ImagemPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pkg2/pkg1b/assets/register.png"))); // NOI18N
+        ImagemPrincipal.setOpaque(true);
 
         jButton1.setBackground(new java.awt.Color(211, 211, 211));
         jButton1.setFont(new java.awt.Font("URW Gothic", 1, 18)); // NOI18N
@@ -450,23 +459,24 @@ public class MainView extends javax.swing.JFrame implements ActionListener{
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(ImagemPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(ImagemPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, 661, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Sexo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Saude, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Tempo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Locais, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Mascara, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Idade, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Nome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(32, 32, 32)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(SubmitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(58, 58, 58))
+                        .addGap(8, 8, 8)
+                        .addComponent(SubmitButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(Tempo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Saude, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Locais, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Mascara, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Sexo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Idade, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Nome, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGap(28, 28, 28))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -478,20 +488,20 @@ public class MainView extends javax.swing.JFrame implements ActionListener{
                 .addComponent(Idade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Sexo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(12, 12, 12)
                 .addComponent(Mascara, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(12, 12, 12)
                 .addComponent(Locais, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Saude, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(12, 12, 12)
                 .addComponent(Tempo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(SubmitButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
