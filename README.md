@@ -4,7 +4,7 @@ Risco complicação devido a possível contaminação - POO
 ### Structure Foulder:
 
     ├── dist                       # contains the minimized version of the source code
-    │   ├── MemoryGame.jar           # executable file
+    │   ├── 2-1B                     # executable file
     ├── doc                        # documentation on the use of the project
     ├── src                        # source
     │   ├── assets                   # all imagens used    
