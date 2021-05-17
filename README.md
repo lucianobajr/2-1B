@@ -8,10 +8,10 @@ Risco complicação devido a possível contaminação - POO
     ├── doc                        # documentation on the use of the project
     ├── src                        # source
     │   ├── assets                   # all imagens used    
-    │   ├── Controller               # 2-1B controllers 
+    │   ├── controller               # 2-1B controllers 
     │   ├── model                    # 2-1B models
     │   ├── view                     # 2-1B screens
-    │   ├── MemoryGame.java          # main java file to run 2-1B 
+    │   ├── Main.java                # main java file to run 2-1B 
     │   
 
 ### Screenshots
