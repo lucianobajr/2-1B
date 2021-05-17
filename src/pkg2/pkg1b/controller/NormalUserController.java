@@ -17,6 +17,10 @@ public class NormalUserController {
         if (ScoreDesease == 0) {
             ScoreDesease = 1;
         }
+        if (ScoreEnvi == 0) {
+            return 1;
+        }
+        
         time = time / 60; // conver to hour 
 
         FinalScore = age;
@@ -25,7 +29,7 @@ public class NormalUserController {
         FinalScore += ScoreEnvi * 4;
         FinalScore += ScoreDesease * 5;
         FinalScore = FinalScore / 15;
-  
+
         return (float) FinalScore;
     }
 
