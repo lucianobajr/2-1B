@@ -6,6 +6,7 @@
 package pkg2.pkg1b.view;
 
 import javax.swing.JOptionPane;
+import pkg2.pkg1b.controller.NormalUserController;
 
 /**
  *
@@ -161,7 +162,7 @@ public class MainView extends javax.swing.JFrame {
         jLabel5.setText("Sexo:");
 
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setIcon(new javax.swing.ImageIcon("/home/luciano/NetBeansProjects/2-1B/2-1B/src/pkg2/pkg1b/assets/sexo.png")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pkg2/pkg1b/assets/sexo.png"))); // NOI18N
 
         sexo.add(masculino);
         masculino.setText("Masculino");
@@ -184,8 +185,9 @@ public class MainView extends javax.swing.JFrame {
         SexoLayout.setHorizontalGroup(
             SexoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SexoLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5)
                 .addGap(57, 57, 57)
                 .addComponent(masculino)
@@ -196,7 +198,7 @@ public class MainView extends javax.swing.JFrame {
         SexoLayout.setVerticalGroup(
             SexoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SexoLayout.createSequentialGroup()
-                .addContainerGap(30, Short.MAX_VALUE)
+                .addContainerGap(31, Short.MAX_VALUE)
                 .addGroup(SexoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(masculino)
@@ -213,7 +215,7 @@ public class MainView extends javax.swing.JFrame {
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pkg2/pkg1b/assets/marcara.png"))); // NOI18N
 
-        FieldMascara.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Máscara Cirúrgica", "Máscara de pano", "Máscara PFF2 ", "Máscara  N95   ", "Sem Máscara" }));
+        FieldMascara.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Sem Mascara", "Mascara de Pano", "Mascara Cirurgica", "Mascara N95", "Mascara PFF2" }));
         FieldMascara.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 FieldMascaraActionPerformed(evt);
@@ -234,7 +236,7 @@ public class MainView extends javax.swing.JFrame {
         );
         MascaraLayout.setVerticalGroup(
             MascaraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 79, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MascaraLayout.createSequentialGroup()
                 .addContainerGap(30, Short.MAX_VALUE)
                 .addGroup(MascaraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -284,7 +286,7 @@ public class MainView extends javax.swing.JFrame {
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pkg2/pkg1b/assets/locais.png"))); // NOI18N
 
-        FieldLocal.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hospital ", "Transporte Bublico   ", "Banco  ", "Loteria ", "Elevador ", "Cinema ", "Academia ", "Feira Livre ", "Supermecado ", "Restaurante ", "Consultorio ", "Drogaria ", "Via Publica ", "Veiculo Particular", "Casa" }));
+        FieldLocal.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hospital", "Transporte Publico", "Banco", "Loteria", "Elevador", "Cinema", "Academia", "Feira Livre", "Supermecado", "Restaurante", "Consultorio", "Drogaria", "Via Publica", "Veiculo Particula", "Casa" }));
         FieldLocal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 FieldLocalActionPerformed(evt);
@@ -305,7 +307,7 @@ public class MainView extends javax.swing.JFrame {
         );
         LocaisLayout.setVerticalGroup(
             LocaisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, 79, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, LocaisLayout.createSequentialGroup()
                 .addContainerGap(30, Short.MAX_VALUE)
                 .addGroup(LocaisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -510,6 +512,8 @@ public class MainView extends javax.swing.JFrame {
 
     private void SubmitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubmitButtonActionPerformed
         // TODO add your handling code here:
+        NormalUserController UserController = new NormalUserController();  
+        
         int scoreSaude = 0;
         String nome = FieldName.getText();
         int idade = (Integer) FieldIdade.getValue();
@@ -517,13 +521,15 @@ public class MainView extends javax.swing.JFrame {
         String sexo = "";
         int tempo = (Integer) FieldTempo.getValue();
         String local = (String) FieldLocal.getSelectedItem();
-
+                
         if (masculino.isSelected()) {
             sexo = "Masculino";
         }
         if (feminino.isSelected()) {
             sexo = "Feminino";
-        }
+        } 
+        UserController.init_new_user(nome,idade,sexo); 
+
 
         if (hipertensao.isSelected()) {
             scoreSaude += 1;
@@ -544,13 +550,22 @@ public class MainView extends javax.swing.JFrame {
         if (puerperas.isSelected()) {
             scoreSaude += 1;
         }
-
+        
         if (nome.isEmpty() || idade == 0 || mascara.isEmpty() || tempo == 0 || sexo.isEmpty() || local.isEmpty()) {
             JOptionPane.showMessageDialog(this,
                     "Preencha todos os campos!");
         } else {
-            System.out.println("Tudo certo, pode inserir!");
-        }
+            UserController.newUser.setDesease(scoreSaude); 
+            UserController.newUser.setMask(mascara); 
+            System.out.println("Local: "+local);
+            UserController.newUser.setEnvi(local); 
+            UserController.newUser.setTime(tempo);  
+            UserController.newUser.show_user();
+        } 
+        UserController.getScore(); 
+        
+        
+        
 
 
     }//GEN-LAST:event_SubmitButtonActionPerformed

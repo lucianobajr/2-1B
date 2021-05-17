@@ -5,7 +5,8 @@ public class Mask {
     int id;
     String descrição;
     int grauDeProtecao;  
-
+ 
+    SetMasks AllTypes = new SetMasks(); 
     
     
         //CONTRUTOR
@@ -29,7 +30,9 @@ public class Mask {
     public String toString() {
         return "id=" + id + ", descri\u00e7\u00e3o=" + descrição + ", grauDeProtecao=" + grauDeProtecao ;
     }
-    
+    public int getRisk(){ 
+        return AllTypes.getRisk(this.descrição); 
+    }
     
     
 }

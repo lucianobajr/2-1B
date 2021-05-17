@@ -18,7 +18,7 @@ public class BasicController {
     
         if(answer==1 ){
             NormalUserController NC = new NormalUserController();  
-            NC.init_new_user();
+           // NC.init_new_user();
 
         }
     

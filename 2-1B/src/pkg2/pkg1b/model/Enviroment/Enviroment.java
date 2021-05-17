@@ -49,12 +49,14 @@ public class Enviroment{
 
     public boolean setName(String name) {
         if(this.AllEnv.verify(name) == true){
+            System.out.println("Certo");
             this.Name = name; 
             return true; 
         }
-        else
+        else{ 
+            System.out.println("Falso");
             return false; 
-            
+        }
             
     } 
 

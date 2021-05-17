@@ -4,7 +4,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class CommonEnvironments {
-    private String[] AvaiablePlaces = {"Hospital", "Transporte Bublico", "Banco", "Loteria","Elevador","Cinema","Academia","Feira Livre", "Supermecado","Restaurante","Consultorio","Drogaria","Via Publica","Veiculo Particula","Casa"}; 
+    private String[] AvaiablePlaces = {"Hospital", "Transporte Publico", "Banco", "Loteria","Elevador","Cinema","Academia","Feira Livre", "Supermecado","Restaurante","Consultorio","Drogaria","Via Publica","Veiculo Particula","Casa"}; 
     
     public boolean verify(String Name){ 
         for(String i: AvaiablePlaces){ 
@@ -14,9 +14,9 @@ public class CommonEnvironments {
         return false; 
     }  
     public int getRisk(String name){ 
-        int risk = 0 ; 
+        int risk = 15 ; 
         for(String i: AvaiablePlaces){ 
-            risk++; 
+            risk--; 
             if(i.equals(name)) 
                return risk; 
         }
