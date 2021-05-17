@@ -26,4 +26,17 @@ Risco complicação devido a possível contaminação - POO
 
 | Risco 
 |-----------------------------------------------------------------------------------------------------------------------------|
-|![Captura de tela de 2021-05-17 00-28-20](https://user-images.githubusercontent.com/45442173/118429118-5104e100-b6a7-11eb-8182-575432431db1.png) |
+|![Captura de tela de 2021-05-17 00-28-20](https://user-images.githubusercontent.com/45442173/118429118-5104e100-b6a7-11eb-8182-575432431db1.png) | 
+
+
+
+References: 
+[1] Dexter, Franklin, et al. "Perioperative COVID-19 defense: an evidence-based approach for optimization of infection control and operating room management." Anesthesia and analgesia (2020). Link : https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7172574/  
+
+[2] Link: https://www.medicina.ufmg.br/saiba-onde-o-risco-de-contagio-do-coronavirus-e-maior/ 
+
+[3] Radenkovic, Dina, et al. "Cholesterol in relation to COVID-19: should we care about it?." Journal of clinical medicine 9.6 (2020): 1909.  
+
+[4] Liu, Dehan, et al. "Pregnancy and perinatal outcomes of women with coronavirus disease (COVID-19) pneumonia: a preliminary analysis." American journal of roentgenology 215.1 (2020): 127-132 Link: https://www.ajronline.org/doi/pdf/10.2214/AJR.20.23072 
+
+[5] Feng, Shuo, et al. "Rational use of face masks in the COVID-19 pandemic." The Lancet Respiratory Medicine 8.5 (2020): 434-436.
