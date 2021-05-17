@@ -40,4 +40,6 @@ References:
 
 [4] Liu, Dehan, et al. "Pregnancy and perinatal outcomes of women with coronavirus disease (COVID-19) pneumonia: a preliminary analysis." American journal of roentgenology 215.1 (2020): 127-132 Link: https://www.ajronline.org/doi/pdf/10.2214/AJR.20.23072 
 
-[5] Feng, Shuo, et al. "Rational use of face masks in the COVID-19 pandemic." The Lancet Respiratory Medicine 8.5 (2020): 434-436.
+[5] Feng, Shuo, et al. "Rational use of face masks in the COVID-19 pandemic." The Lancet Respiratory Medicine 8.5 (2020): 434-436. 
+
+[6] Diagrama Riscos: https://setorsaude.com.br/covid-19-os-diferentes-riscos-conforme-a-distancia-fisica-ventilacao-e-tempo-de-exposicao-ao-virus/
