@@ -30,7 +30,8 @@ Risco complicação devido a possível contaminação - POO
 
 
 
-References: 
+References:  
+
 [1] Dexter, Franklin, et al. "Perioperative COVID-19 defense: an evidence-based approach for optimization of infection control and operating room management." Anesthesia and analgesia (2020). Link : https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7172574/  
 
 [2] Link: https://www.medicina.ufmg.br/saiba-onde-o-risco-de-contagio-do-coronavirus-e-maior/ 
